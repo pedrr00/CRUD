@@ -17,7 +17,8 @@ import { HomeComponent } from './views/home/home.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
- 
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,8 @@ import { ProductCreateComponent } from './components/product/product-create/prod
     MatListModule,
     MatCardModule,
     RouterModule,
+    MatButtonModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
