@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -29,7 +29,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatIconModule } from '@angular/material/icon';
-
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,9 @@ import { MatIconModule } from '@angular/material/icon';
     ProductCrudComponent,
     ProductCreateComponent,
     ProductReadComponent,
-    ProductRead2Component
+    ProductRead2Component,
+    ProductUpdateComponent,
+    ProductDeleteComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +66,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatSortModule,
     MatIconModule,
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

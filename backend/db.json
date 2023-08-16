@@ -1,11 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "caneta BIC preta",
-      "price": 5.89
-    },
-    {
       "id": 2,
       "name": "Notebook Mac Pro",
       "price": 12000.89
@@ -14,6 +9,11 @@
       "id": 3,
       "name": "Samsung S20+",
       "price": 4000.89
+    },
+    {
+      "name": "caneta BIC preta",
+      "price": "6.89",
+      "id": 4
     }
   ]
 }
