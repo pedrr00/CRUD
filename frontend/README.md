@@ -28,5 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 Fazer paginação integrando front com back e deixar as requisições mais dinamicas com o back
-Colocar css de botões e formularios dentro do global
 Reparar Mensagem de erro e de aceite

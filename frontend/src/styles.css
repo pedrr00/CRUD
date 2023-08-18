@@ -20,3 +20,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #e35e6b;
     color: #fff;
 }
+
+/*
+ button {
+    margin: 20px 15px 0px 0px;
+}
+*/
+.styleButton {
+    margin: 20px 15px 0px 0px;
+}
