@@ -12,7 +12,7 @@ import { catchError, map } from 'rxjs/operators';
 export class ProductService {
   baseUrl ="http://localhost:3001/products";
 
-  constructor(private snackBar: MatSnackBar, private hhtp: HttpClient) { }
+  constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
   showMessage(msg: string, isError: boolean = false): void {
     this.snackBar.open(msg, 'X', {
@@ -24,14 +24,14 @@ export class ProductService {
   }
 
   create(product: Product): Observable<Product>{
-    return this.hhtp.post<Product>(this.baseUrl, product).pipe(
+    return this.http.post<Product>(this.baseUrl, product).pipe(
       map(obj => obj),
       catchError((e) => this.errorHandler (e))
     );
   }
 
   read(): Observable<Product[]>{
-    return this.hhtp.get<Product[]>(this.baseUrl).pipe(
+    return this.http.get<Product[]>(this.baseUrl).pipe(
       map(obj => obj),
       catchError((e) => this.errorHandler (e))
     );
@@ -39,7 +39,7 @@ export class ProductService {
 
   readById(id: string): Observable<Product> {
     const url = `${this.baseUrl}/${id}`
-    return this.hhtp.get<Product>(url).pipe(
+    return this.http.get<Product>(url).pipe(
       map(obj => obj),
       catchError((e) => this.errorHandler (e))
     );
@@ -47,7 +47,7 @@ export class ProductService {
 
   update(product: Product): Observable<Product> {
     const url = `${this.baseUrl}/${product.id}`
-    return this.hhtp.put<Product>(url, product).pipe(
+    return this.http.put<Product>(url, product).pipe(
       map(obj => obj),
       catchError((e) => this.errorHandler (e))
     );
@@ -55,7 +55,7 @@ export class ProductService {
 
   delete(id: string): Observable<Product>{
     const url = `${this.baseUrl}/${id}`
-    return this.hhtp.delete<Product>(url).pipe(
+    return this.http.delete<Product>(url).pipe(
       map(obj => obj),
       catchError((e) => this.errorHandler (e))
     );
