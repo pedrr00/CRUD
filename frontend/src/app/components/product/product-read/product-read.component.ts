@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Product } from '../product.model';
 import { ProductService } from '../product.service';
-import { Action } from 'rxjs/internal/scheduler/Action';
+//import { Action } from 'rxjs/internal/scheduler/Action';
 
 @Component({
   selector: 'app-product-read',

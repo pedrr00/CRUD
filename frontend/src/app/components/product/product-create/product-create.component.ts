@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ProductService } from './../product.service';
 import { Router } from '@angular/router';
 import { Product } from '../product.model';
-import { NumberSymbol } from '@angular/common';
+//import { NumberSymbol } from '@angular/common';
 
 @Component({
   selector: 'app-product-create',
